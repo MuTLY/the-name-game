@@ -1,0 +1,74 @@
+.game-loop {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: start;
+  width: 100%;
+  background-color: #ffffff;
+  color: #223547;
+
+  h2 {
+    font-family: Helvetica;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 1;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+
+  h3 {
+    font-family: Helvetica;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 1;
+    text-align: center;
+  }
+
+  .thumbs {
+    max-width: 880px;
+    width: 100%;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 50px;
+
+    .thumb {
+      position: relative;
+      display: block;
+      border-radius: 4px;
+      overflow: hidden;
+
+      .correctMark,
+      .incorrectMark {
+        display: flex;
+        position: absolute;
+        z-index: 1;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        align-items: center;
+        justify-content: center;
+
+        img {
+          width: 120px;
+          height: 120px;
+        }
+      }
+
+      /* when the thumb is correct or incorrect */
+      .correctMark {
+        background-color: #34c75999;
+      }
+      .incorrectMark {
+        background-color: #ff3b3099;
+      }
+
+      img {
+        width: 260px;
+        height: 260px;
+      }
+    }
+  }
+}

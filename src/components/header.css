@@ -1,0 +1,32 @@
+h1 {
+  position: static;
+  background-color: #223547;
+  color: white;
+  padding: 5px 0;
+  width: 100%;
+  text-align: center;
+  font-size: unset;
+  line-height: normal;
+  height: 100px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  a {
+    display: block;
+    text-align: left;
+    padding-left: 15px;
+    width: 32px;
+  }
+
+  img {
+    display: inline-block;
+    margin: auto;
+  }
+
+  &::after {
+    content: "";
+    width: 32px;
+    padding-left: 15px; /* so the columns are aligned */
+  }
+}
