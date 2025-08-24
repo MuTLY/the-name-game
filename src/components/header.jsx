@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
 import { FaChevronLeft } from "react-icons/fa";
-import theGameNameHeader from "/the-name-game-header.svg";
+import theGameNameHeader from "../assets/images/the-name-game-header.svg";
 import "./header.css";
 
 export const Header = () => {

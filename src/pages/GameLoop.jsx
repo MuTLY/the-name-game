@@ -1,8 +1,9 @@
 import { Link, useNavigate } from "react-router-dom";
 import { useEffect, useState } from "react";
 import "./game-loop.css";
-import correctMark from "/correct-mark.svg";
-import incorrectMark from "/incorrect-mark.svg";
+import correctMark from "../assets/images/correct-mark.svg";
+import incorrectMark from "../assets/images/incorrect-mark.svg";
+import spacerGif from "../assets/images/spacer.gif";
 
 // Move fetchEmployeeData outside the component to avoid useEffect dependency warning
 const fetchEmployeeData = async (setEmployeeData, navigate) => {
@@ -97,7 +98,6 @@ const GameLoop = () => {
           </h3>
         )}
       </div>
-
       <div className="thumbs">
         {randomEmployeeIds.map((id) => {
           const employeeInfo = employeeData.find(
@@ -153,7 +153,7 @@ const GameLoop = () => {
                   filter:
                     markState.result === "incorrect" ? "grayScale(100%)" : "",
                 }}
-                src="/spacer.gif"
+                src={spacerGif}
                 alt={employeeInfo?.firstName || "Employee Name"}
               />
 
@@ -162,7 +162,6 @@ const GameLoop = () => {
           );
         })}
       </div>
-
       <div className="card">
         <Link
           to="/game-loop"

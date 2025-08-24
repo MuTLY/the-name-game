@@ -1,5 +1,5 @@
 import "./game-over.css";
-import gameOver from "/grats.svg";
+import gameOver from "../assets/images/grats.svg";
 
 import { Link, useLocation } from "react-router-dom";
 

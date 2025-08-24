@@ -1,7 +1,7 @@
 import { Link } from "react-router-dom";
 
 import "./home.css";
-import gameLogo from "/logo.svg";
+import gameLogo from "../assets/images/logo.svg";
 
 function Error() {
   return (

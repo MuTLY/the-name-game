@@ -1,7 +1,7 @@
 import { Link } from "react-router-dom";
 
 import "./home.css";
-import gameLogo from "/logo.svg";
+import gameLogo from "../assets/images/logo.svg";
 
 function NotFound() {
   return (
@@ -23,8 +23,7 @@ function NotFound() {
       <div className="card">
         <Link
           to="/"
-          className="play-buttonx text-white bg-blue-900 hover:bg-blue-700 rounded-md px-3 py-2"
-        >
+          className="play-buttonx text-white bg-blue-900 hover:bg-blue-700 rounded-md px-3 py-2">
           <span>Go Back</span>
         </Link>
       </div>
