@@ -49,7 +49,7 @@ const GameLoop = () => {
 
     while (randomIds.size < numIds && arr.length > 0) {
       const randomIndex = Math.floor(Math.random() * arr.length);
-      const randomId = arr[randomIndex].id; // Assuming each object has an 'id' property
+      const randomId = arr[randomIndex].id; // Each object has an 'id' property
       randomIds.add(randomId);
       arr.splice(randomIndex, 1); // Remove the selected object to avoid duplicates
     }
@@ -67,7 +67,6 @@ const GameLoop = () => {
     // This effect runs whenever employeeData changes
     if (employeeData && employeeData.length > 0) {
       console.log("Employee data has been updated:", employeeData);
-      // You can perform additional actions here, like updating the UI
 
       const ids = getRandomIds([...employeeData], 6);
       setRandomEmployeeIds(ids);
