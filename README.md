@@ -1,4 +1,12 @@
-# React + Vite
+# React + Vite exercise
+
+This repository is an exercise in building a React app using Vite, following a pre-determined design system.
+
+The idea is to build a game where you can try and tag a face to match its name. For the purpose of the exercise, the actual name is displayed along the faces.
+
+The code is not finished on purpose.
+
+---
 
 This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
 
