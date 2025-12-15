@@ -34,7 +34,7 @@ function GameOver({ score }) {
       <div className="card">
         <p>
           Thanks for playing! If you enjoyed this game, please consider
-          contributing to the WillowTree open source community.
+          contributing to the open source community.
         </p>
       </div>
     </div>
