@@ -13,7 +13,7 @@ function Home() {
         </Link>
       </div>
 
-      <p>Try matching the WillowTree employee to their photo.</p>
+      <p>Try matching the employee to their photo.</p>
 
       <div className="card">
         <Link
