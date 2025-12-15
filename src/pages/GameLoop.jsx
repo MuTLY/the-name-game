@@ -88,7 +88,7 @@ const GameLoop = () => {
   return (
     <div className="game-loop">
       <div className="card">
-        <h2>Try matching the WillowTree employee to their photo.</h2>
+        <h2>Try matching the employee to their photo.</h2>
 
         {randomEmployee.id && (
           <h3>
@@ -119,14 +119,17 @@ const GameLoop = () => {
                 } else {
                   setMarkState({ id: selectedId, result: "incorrect" });
                   console.log("Incorrect! Current score:", score); // In this case, the game ends, so we don't increment the score
+                  
+                  // TODO: make sure to disable navigation before redirect
                   setTimeout(() => {
                     // Redirect to game over page after a short delay
                     navigate("/game-over", {
                       state: { score: score }, // Pass the current score to the game over page
                     });
-                  }, 5000); // Redirect after x seconds
+                  }, 5000); // Redirect after 5 seconds
                 }
               }}>
+              
               {/* Display correct or incorrect mark only for the clicked thumb */}
               {markState.id === id && markState.result === "correct" && (
                 <div className="correctMark">
@@ -139,6 +142,7 @@ const GameLoop = () => {
                 </div>
               )}
 
+              {/* Displaying employee name below just for testing purposes */}
               <img
                 style={{
                   width: "260px",
@@ -155,7 +159,7 @@ const GameLoop = () => {
                 src={spacerGif}
                 alt={employeeInfo?.firstName || "Employee Name"}
               />
-
+              
               <p>{employeeInfo?.firstName || "Employee Name"}</p>
             </a>
           );
